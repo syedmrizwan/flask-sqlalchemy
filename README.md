@@ -29,8 +29,8 @@ To be able to run **flask-sqlalchemy** you have to meet following dependencies:
 
 ## 5. Start Application Server
 
-- `python manage.py run`
-
+- `export FLASK_APP=app.py`
+- `flask run`
 
 # Creating virtual env for mac and linux
 
