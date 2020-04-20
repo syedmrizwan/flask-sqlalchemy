@@ -16,6 +16,7 @@ class CarsModel(db.Model):
     name = db.Column(db.String())
     model = db.Column(db.String())
     doors = db.Column(db.Integer())
+    
 
     def __init__(self, name, model, doors):
         self.name = name
@@ -24,6 +25,21 @@ class CarsModel(db.Model):
 
     def __repr__(self):
         return "<Car '{}'>".format(self.name)
+
+
+class UsersModel(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String())
+    email = db.Column(db.String())
+
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+    def __repr__(self):
+        return "<User '{}'>".format(self.name)
 
 
 @app.route('/cars', methods=['POST', 'GET'])

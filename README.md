@@ -23,9 +23,9 @@ To be able to run **flask-sqlalchemy** you have to meet following dependencies:
 
 ## 4. Run migrations
 - Switch to project root directory.
-- run `$ python3 manage.py db init`
-- run `$ python3 manage.py db migrate`
-- run `$ python3 manage.py db upgrade`
+- run `$ flask db init`
+- run `$ flask db migrate`
+- run `$ flask db upgrade`
 
 ## 5. Start Application Server
 
